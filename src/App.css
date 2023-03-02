@@ -1,7 +1,3 @@
-
-
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -26,8 +22,6 @@ p {
   margin: 0;
 }
 
-
-
 .main {
   flex: 1 1 100%;
   padding: 25px 15px 50px;
@@ -37,21 +31,18 @@ p {
   text-align: center;
 }
 
-
-
 p:not(:last-child) {
   margin-bottom: 8px;
 }
 
 .body {
-  font: 22px 'monospace';
+  font: 22px "monospace";
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 30px;
   text-align: center;
-
 }
 
 .card {
@@ -62,7 +53,7 @@ p:not(:last-child) {
   justify-content: space-between;
 
   padding: 35px;
-text-align: center;
+  text-align: center;
   border: 2px solid rgba(26, 15, 146, 0.884);
   border-radius: 20px;
   background-color: rgb(215, 200, 236);
@@ -74,11 +65,11 @@ text-align: center;
   font-size: 12px;
   margin-bottom: 20px;
   color: rgb(57, 57, 117);
-  text-align:center;
+  text-align: center;
 }
 
 .location .city {
-  color:#fc466b;
+  color: #fc466b;
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 5px;
@@ -89,43 +80,50 @@ text-align: center;
 }
 
 .location .date {
- color: rgb (77, 101, 240, 0.897);
- font-size: 23px;
+  color: rgb (77, 101, 240, 0.897);
+  font-size: 23px;
 }
 
 .current .temp {
- color: #FFF;;
- font-size: 102px;
- font-weight: 900;
- margin: 30px 0px;
- text-shadow: 4px 10px rgb(92, 127, 241)
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 4px 10px rgb(92, 127, 241);
 }
 
 .curent .temp span {
- font-weight: 500;
+  font-weight: 500;
 }
 
-.current  .weather {
- color: #fc466b;
- font-size: 28px;
- font-weight: 700;
- font-style: italics;
- margin-bottom: 20px;
- text-shadow: 0px 4px rgba(77, 101, 240, 0.897);
+.current .weather {
+  color: #fc466b;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italics;
+  margin-bottom: 20px;
+  text-shadow: 0px 4px rgba(77, 101, 240, 0.897);
 }
 
 .current .hi-low {
- color:#FFF;
- font-size: 26px;
- font-weight: 510;
- text-shadow: 0px 4px rgba(77, 101, 240, 0.897)
+  color: #fff;
+  font-size: 26px;
+  font-weight: 510;
+  text-shadow: 0px 4px rgba(77, 101, 240, 0.897);
 }
 
 .app-wrap {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3,), rgba 0, 0, 0, 0.6));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba 0,
+    0,
+    0,
+    0.6
+  );
 }
 
 .header {
@@ -139,7 +137,7 @@ text-align: center;
   width: 100%;
   max-width: 280px;
   padding: 10px 25px;
-  align-items:center;
+  align-items: center;
   border: none;
   outline: none;
   background-color: rgb(255, 255, 255);
@@ -148,10 +146,4 @@ text-align: center;
   font-size: 20px;
   font-weight: 300;
   transition: 0.2s ease-out;
-}
-
-.weather-app {
-  padding: 20px;
-  border: 3px solid #64a5fa;
-  border-radius: 5px;
 }

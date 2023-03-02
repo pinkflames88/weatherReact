@@ -1,13 +1,11 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
 import Weather from "./WeatherSearch.js";
 import "./App.css";
-
 
 export default function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="card">
         <Weather defaultCity="Milan" />
 
         <footer>
@@ -16,14 +14,10 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-             <br> 
-            Designed by Naomi G </br>
-         <div class="card-footer"> 
-         </dov>
-         </footer>
-    
-
-
+            Designed by Naomi G
+          </a>
+          <div class="card-footer"></div>
+        </footer>
       </div>
     </div>
   );
