@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from "react";
-import "./WeatherForecast.css";
+import React, { useState } from "react";
 import axios from "axios";
+import "./WeatherForecast.css";
 import WeatherForecastNow from "./WeatherForecastNow";
+
+const api = {
+  key: "8b59f01b318900ea52653048da259269",
+  base: "https://api.openweathermap.org/data/2.5/",
+};
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);

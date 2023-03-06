@@ -1,15 +1,18 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.css";
+import "./Weather.css";
+import "./App.css";
+import WeatherSearch from "./WeatherSearch.js";
 import App from "./App";
 
 const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const root = rootElement;
 
 root.render(
   <StrictMode>
-    <App />
+    <div className="App">
+      <h1>Weatherly</h1>
+      <WeatherSearch />
+    </div>
   </StrictMode>
 );
