@@ -37,7 +37,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #53f9e7;
   background: radial-gradient(circle, #9c8fd2 0%, #d3fbf6 100%) center / cover
     no-repeat fixed;
   min-height: 100vh;
@@ -51,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: url("./src/images/pinksunpic.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

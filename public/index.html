@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Weather application" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title> weatherly</title>
+        <link rel="stylesheet" href="src/App.css"/>
+        <link rel="stylesheet" href="src/Weather.css"/>
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    </head>
+    <body>
+    <div class="card">
 
-    <title>Weatherly `</title>
+             <header>
+                <div class="class"></div>
+                 <input type="text" autocomplete="off" class="search-box" placeholder="search for a city..." />
+                 
+             </header>
+             <main>
+                 <section class="location">
+                    <div class="city">London,GB</div>
+                    <div class="date">Thursday 1st January 2022</div>
+                  
+            
+                <div class="current">
+                  <div class="temp">23<span>°c</span></div>
+                  <div class="weather">sunny</div>
+                  <div class="hi-low">12° / 20°</div>
+                </div>
+                 </section>
+           <div class="row">
+                      <div class="col-4">
+                        <div class="clearfix weather-temperature">
+          
+                          <img src="http://openweathermap.org/img/wn/04d@2x.png"
+                           alt="Clear" id="icon" class="float-right" />
+                          <div class="float-right">
+                            <strong id="temperature"></strong
+                            ><span class="units"
+                              ><a href="#" id="celsius-link" class="active">°C</a> |
+                              <a href="#" id="fahrenheit-link">°F</a></span>
+      
+      
+            </div>
+          </div>
+    
+        </div>
+          
+         </main>
+         <div class="card-footer"> Designed by Naomi G 
+             <br> https://github.com/pinkflames88/Weather-app </br>
+         </footer>
+        </div>
+
+    </div>
+              <script src="src/index.js"></script>
+    <script src="src/WeatherSearch.js"></script>
+
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
+
+    </body>
+  
   </body>
 </html>
