@@ -1,12 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./WeatherForecast.css";
 import WeatherForecastNow from "./WeatherForecastNow";
-
-const api = {
-  key: "8b59f01b318900ea52653048da259269",
-  base: "https://api.openweathermap.org/data/2.5/",
-};
 
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -30,6 +25,10 @@ export default function WeatherForecast(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  useEffect(() => {
+    load();
+  }, []);
+
   if (loaded) {
     return (
       <div className="WeatherForecast">
@@ -49,8 +48,6 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    load();
-
     return null;
   }
 }

@@ -1,13 +1,3 @@
-.weather-app {
-  padding: 20px;
-  border: 3px solid #64a5fa;
-  border-radius: 5px;
-}
-
-.overview {
-  margin-bottom: 20px;
-}
-
 .weather-temperature img {
   margin-right: 5px;
   height: 60px;
@@ -22,9 +12,9 @@
 }
 
 .weather-temperature .units {
-  position: static;
+  position: relative;
   font-size: 16px;
-  top: -38px;
+  top: -34px;
 }
 
 .weather-temperature .active {
