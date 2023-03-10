@@ -6,16 +6,17 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.x",
-    "react-dom": "^18.x",
-    "react-scripts": "5.x",
-    "web-vitals": "^2.1.4",
     "axios": "^0.27.x",
     "bootstrap": "^5.x",
-    "postcss-normalize": "^10.0.1"
+    "postcss-normalize": "^10.0.1",
+    "react": "^18.x",
+    "react-animated-weather": "^4.0.1",
+    "react-dom": "^18.x",
+    "react-scripts": "^2.1.3",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

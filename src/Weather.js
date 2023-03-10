@@ -3,6 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
+import "./Card.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -45,29 +46,31 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-4">
-              <input
-                type="search"
-                placeholder="Enter a city.."
-                className="form-control"
-                autoFocus="on"
-                onChange={handleCityChange}
-              />
+      <div className="card">
+        <div className="card-body">
+          <form onSubmit={handleSubmit}>
+            <div className="row">
+              <div className="col-4">
+                <input
+                  type="search"
+                  placeholder="Enter a city.."
+                  className="form-control"
+                  autoFocus="on"
+                  onChange={handleCityChange}
+                />
+              </div>
+              <div className="col-4">
+                <input
+                  type="submit"
+                  value="Search"
+                  className="btn btn-primary w-100"
+                />
+              </div>
             </div>
-            <div className="col-4">
-              <input
-                type="submit"
-                value="Search"
-                className="btn btn-primary w-100"
-              />
-            </div>
-          </div>
-        </form>
-        <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
+          </form>
+          <WeatherInfo data={weatherData} />
+          <WeatherForecast coordinates={weatherData.coordinates} />
+        </div>
       </div>
     );
   } else {

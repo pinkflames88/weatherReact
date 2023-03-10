@@ -1,74 +1,6 @@
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-p {
-  margin: 0;
-}
-
-#units {
-  text-align: center;
-}
-
-main {
-  flex: 1 2 100%;
-  padding: 25px 15px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-p:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-body {
-  font: 22px "monospace";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f08080;
-  min-height: 100vh;
-  padding: 30px;
-}
-
-.card {
-  max-width: 450px;
-  min-height: 400px;
-  background-image: url("images/pinksunpic.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 35px;
-  border: 2px solid rgba(42, 113, 219, 0.884);
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.575);
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-}
-
-.card-footer {
-  font-size: 12px;
-  margin-bottom: 20px;
-  color: rgb(57, 57, 117);
-  text-align: center;
-}
-
-.location .city {
-  color: #fc466b;
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-header input:focus {
-  background-color: rgba(77, 101, 240, 0.897);
+.container {
+  background-color: white;
+  padding: 0px;
 }
 
 .location .date {
@@ -102,27 +34,4 @@ header input:focus {
   font-size: 26px;
   font-weight: 510;
   text-shadow: 0px 4px rgba(77, 101, 240, 0.897);
-}
-
-.app-wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.6)
-  );
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 15px 15px;
-}
-
-.header input {
-  width: 100%;
-  max-width: 280px;
 }

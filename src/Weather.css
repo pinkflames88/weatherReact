@@ -12,9 +12,9 @@
 }
 
 .weather-temperature .units {
-  position: relative;
+  position: static;
   font-size: 16px;
-  top: -34px;
+  top: -38px;
 }
 
 .weather-temperature .active {
